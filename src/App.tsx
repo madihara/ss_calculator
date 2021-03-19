@@ -1,18 +1,10 @@
 import React from "react";
+import Calculator from "./components/Calculator";
 
 function App() {
     return (
-        <div className="font-mono bg-red-50  uppercase">
-            <header className="">
-                <a
-                    className=""
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Madi's calculator
-                </a>
-            </header>
+        <div className="font-mono h-screen  flex  justify-center  content-center text-center bg-gray-500 text-gray-200 uppercase">
+            <Calculator />
         </div>
     );
 }
