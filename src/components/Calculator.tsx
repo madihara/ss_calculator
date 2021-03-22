@@ -18,7 +18,7 @@ const Calculator = () => {
                 <div className="h-3/6 grid grid-cols-4 ">
                     <div className="grid grid-cols-3 col-span-3  h-full mx-3">
                         <NumberButton
-                            onClick={() => setDisplayNumber(displayNumber + 1)}
+                            onClick={() => setDisplayNumber(1)}
                             /*    setDisplayNumber((prevDisplayNumber) => [
                                     ...prevDisplayNumber,
                                     1,
@@ -45,6 +45,10 @@ const Calculator = () => {
                     </div>
                 </div>
             </div>
+
+            <button className="bg-red-800" onClick={() => setDisplayNumber(3)}>
+                change to 3
+            </button>
         </>
     );
 };
