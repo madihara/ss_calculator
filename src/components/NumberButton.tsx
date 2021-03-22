@@ -1,7 +1,9 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 
 interface Props {
     number: string;
+    onClick?: (event: MouseEvent) => void;
+    className?: string;
 }
 
 const NumberButton = (props: Props) => {
